@@ -1,0 +1,70 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+     <div class="container">  
+        <!---------color selector--------------->
+        <div class="color-picker">
+            <div class="color-box">
+                <input type="color" 
+                class="current-color" 
+                id="current-color"
+                >
+            </div>
+            <div class="color-selections">
+                <form id="form">
+                    <select class="color-mode" id="color-mode">
+                        <option value="select one">Select one</option>
+                        <option value="monochrome">Monochrome</option>
+                        <option value="monochrome-dark">Monochrome-Dark</option>
+                        <option value="monochrome-light">Monochrome-Light</option>
+                        <option value="analogic">Analogic</option>
+                        <option value="complement">Complement</option>
+                        <option value="analogic-complement">Analogic-Complement</option>
+                        <option value="triad">Triad</option>
+                        <option value="quad">Quad</option>
+                    </select>
+                </form>
+            </div>
+            <div class="btn-container">
+                <button class="btn" id="btn">Get color scheme</button>
+            </div>
+        </div>
+         <!---------color selector--------------->
+         
+
+         <!---------color bars------------------->
+         <div class="color-bar-container" id="color-bar-container">
+            <div class="bars"> 
+                <div class="color-bar" id="color-bar-1">
+                </div>
+                <div class="color-bar" id="color-bar-2">
+                </div>
+                <div class="color-bar" id="color-bar-3">
+                </div>
+                <div class="color-bar" id="color-bar-4">
+                </div>
+                <div class="color-bar" id="color-bar-5">
+                </div>
+             </div>
+             <div class="hex-codes">
+                 <p class="hex-1" id="hex-1"></p>
+                 <p class="hex-2" id="hex-2"></p>
+                 <p class="hex-3" id="hex-3"></p>
+                 <p class="hex-4" id="hex-4"></p>
+                 <p class="hex-5" id="hex-5"></p>
+             </div>
+         </div>
+        
+          <!---------color bars--------------->
+      </div> 
+      
+      <!---------Modal------------------->
+      <div id="copyAlert-modal">
+          <div id="modal-content"></div>
+      </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>

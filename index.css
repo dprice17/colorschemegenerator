@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 550px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/*******Layout***************/
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+/********Color Selection Area**********/
+
+.color-picker {
+    display: flex;
+    padding: 1.5em;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    width: 550px;
+    height: 90px;
+    background: #1F2937;
+}
+
+.current-color {
+    width: 54px;
+    height: 42px;
+    border: 0.5px solid #D1D5DB;
+}
+
+.color-mode {
+    width: 312px;
+    height: 42px;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+select {
+    padding-left: 0.5em;
+}
+
+option {
+    background: #FFFFFF;
+}
+
+
+/**********Btn Layout***************/
+
+.btn {
+    width: 123px;
+    height: 42px;
+    background: #ffffff;
+    border: 1px solid #D1D5DB;
+    color: #374151;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.btn:hover,
+.btn:focus {
+    cursor: pointer;
+    background: #D1D5DB;
+}
+
+
+/**********Colorbar Area***************/
+
+.color-bar-container{
+    display: none;  
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bars {
+    display: flex;
+}
+
+.color-bar {
+    border: 1px solid #1F2937;
+    width: 110px;
+    height: 550px;  
+}
+
+#color-bar-1,
+#color-bar-2,
+#color-bar-3,
+#color-bar-4,
+#color-bar-5,
+#hex-1 {
+    transition: transform 0.3s ease;
+}
+
+#color-bar-1:hover,
+#color-bar-2:hover,
+#color-bar-3:hover,
+#color-bar-4:hover,
+#color-bar-5:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/***********Hex Code Area**************/
+
+.hex-codes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 46px;
+    background: #1F2937;
+    color: #D5D4D8;
+    font-weight: 700;
+    font-size: 0.75rem;
+}
+
+
+
+
+/*************Popup Modal******************/
+
+#copyAlert-modal {
+    display: none;
+    margin: 0 auto;
+    background: #1F2937;
+    position: fixed;
+    bottom: 325px;
+    left: 250px;
+    width: 175px;
+    height: 50px;
+    color: #fff;
+}
+
+#modal-content {
+    padding: 1em;
+    text-align: center;
+}
+
+
+
